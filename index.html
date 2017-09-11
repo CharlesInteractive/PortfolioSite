@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Charles Interactive</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/imports/jquery.bxslider.css" rel="stylesheet" />
+    <link href="css/imports/jquery.fullPage.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/0209df13d4.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/imports/jquery.bxslider.js" type="text/javascript"></script>
+    <script src="scripts/imports/jquery.fullPage.js" type="text/javascript"></script>
+    <script src="scripts/imports/jquery.fullpage.extensions.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+  	<header>
+  		<div class="title">
+  			<a href="#landing" style="color:#fff; pointer-events: none;">Charles Interactive</a>
+  		</div>
+	  	<div class="navbar">
+			<a href="/pages/about.html">About</a>
+			<a href="/pages/portfolio.html">Portfolio</a>
+			<a href="/pages/gallery.html">Gallery</a>
+			<a href="/pages/contact.html">Contact</a>
+		</div>
+  	</header>
+  	<main>
+  		<div id="fullpage">
+        <div class="section" id="landing">
+<!--           <div class="slide" data-anchor="slide1">
+            <figure class="fullPageLayout" style="background: url(../images/heroOne.jpg) no-repeat center center;background-size:cover;margin:0;">
+            </figure>
+          </div>
+          <div class="slide" data-anchor="slide2">
+            <figure class="fullPageLayout" style="background: url(../images/heroTwo.jpg) no-repeat center center;background-size:cover;margin:0;">
+            </figure>
+          </div> -->
+          <div class="slide" data-anchor="slide3">
+            <figure class="fullPageLayout" style="background: url(../images/heroThree.jpg) no-repeat center center;background-size:cover;margin:0;">
+            </figure>
+          </div>
+          <div class="slide" data-anchor="slide4">
+            <figure class="fullPageLayout" style="background: url(../images/heroFour.jpg) no-repeat center center;background-size:cover;margin:0;">
+            </figure>
+          </div>
+          <div class="slide" data-anchor="slide5">
+            <figure class="fullPageLayout" style="background: url(../images/heroFive.jpg) no-repeat center center;background-size:cover;margin:0;">
+            </figure>
+          </div>
+          <div class="slide" data-anchor="slide6">
+            <figure class="fullPageLayout" style="background: url(../images/heroSix.jpg) no-repeat center center;background-size:cover;margin:0;">
+            </figure>
+          </div>
+          <div class="slide" data-anchor="slide7">
+            <figure class="fullPageLayout" style="background: url(../images/heroSeven.jpg) no-repeat center center;background-size:cover;margin:0;">
+            </figure>
+          </div>
+        </div>
+  		</div>
+  		
+  	</main>
+  	<footer>
+  		<a href="https://github.com/CharlesInteractive" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+  		<a href="https://www.linkedin.com/in/carrollcharles/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+  		<a href="https://www.facebook.com/BackdraftsupaC" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+  		<a href="mailto:charles@blackswaninteractive.com" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+  	</footer>
+  </body>
+</html>
+<script>
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors: ['slide'],
+        navigation: false,
+        autoScrolling: true,
+        controlArrows: false,
+        fitToSection: false,
+        fadingEffect: true
+    });
+    setInterval(function(){
+        $.fn.fullpage.moveSlideRight()
+    },7000);
+    
+});
+</script>
