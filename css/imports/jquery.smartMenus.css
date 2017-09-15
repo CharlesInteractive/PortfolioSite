@@ -13,12 +13,12 @@
 .sm:after{content:"\00a0";display:block;height:0;font:0px/0 serif;clear:both;visibility:hidden;overflow:hidden;}
 .sm,.sm *,.sm *:before,.sm *:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 
-//hover testing
+/*//hover testing*/
 #main-menu ul li a:hover {
     transition: all 2s;
 }
-// custom styles
-//
+/*// custom styles
+//*/
 #main-menu-button {
   display: none;
   width: 32px;
@@ -75,7 +75,7 @@
     z-index: 1000;
     height: 3px;
     width: 100%;
-    background: $brand;
+    background: red;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -141,8 +141,7 @@
 }
 
 #main-menu > a:hover:before{
-  width: 70%; /* initial*/
-   // width: 100%; /* changed value*/
+  width: 100%; /* changed value*/
 }
 
 #main-menu > ul{
@@ -157,7 +156,7 @@
   border-bottom: 5px solid #fff;
 }
 #main-menu a.border:hover span, #main-menu li a.highlighted.border span {
-  border-bottom: 5px solid $brand;
+  border-bottom: 5px solid red;
 }
 
 #main-menu li a:hover{
@@ -185,12 +184,12 @@
   font-size: 0.688em;
     line-height: 1.63em;
     text-transform: uppercase;
-    font-weight: $boldFont;
+    font-weight: 500;
     color: $slate;
 }
 #main-menu li li a {
-  font-weight: $regularFont;
-  color: $slate;
+  font-weight: 500;
+  color: red;
   border-bottom: none;
   font-size:.8em;
   padding-top: 5px;
@@ -219,7 +218,7 @@
 }
 
 .overlayShown li li a:hover{
-  font-weight: $heavyFont;
+  font-weight: 500;
 }
 
 .sm-simple li li a {
@@ -228,7 +227,7 @@
 .sm-simple li li:first-child {
 	margin-top: 20px;
 }
-// jump to mobi menu after  portrait
+/*// jump to mobi menu after  portrait*/
 @media screen and (max-width: 1050px) {
   #main-menu-button {
 
@@ -256,16 +255,16 @@
 }
 
 
-// main menu button
+/*// main menu button*/
 .sm-simple {
-  font-weight: $regularFont;
+  font-weight: 500;
 }
 .sm-simple a, .sm-simple a:hover, .sm-simple a:focus, .sm-simple a:active {
   padding: 7px 12px 0 15px;
   color: inherit;
 }
   .sm-simple a:hover {
-    color: $brand;
+    color: red;
   }
   .sm-simple li li a, .sm-simple li li a:hover {
     padding: 8px 15px;
@@ -273,10 +272,10 @@
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-    font-weight: $mediumFont;
+    font-weight: 500;
   }
   .sm-simple li li a:hover {
-    color: $brand;
+    color: red;
     padding-left: 20px;
     padding-right: 10px;
   }
@@ -308,11 +307,11 @@
   
 }
 .sm-simple ul {
-   //background: white;//transparentize(white, .15);
+/*   //background: white;//transparentize(white, .15);*/
 }
 .sm-simple ul a, .sm-simple ul a:hover, .sm-simple ul a:focus, .sm-simple ul a:active {
-  // not sure why this was here
-  // border-left: 8px solid transparent;
+/*  // not sure why this was here
+  // border-left: 8px solid transparent;*/
 }
 .sm-simple ul ul a,
 .sm-simple ul ul a:hover,
@@ -347,12 +346,12 @@
   -----------------------------------------------*/
   /* start... (it's not recommended editing these rules) */
   #main-menu {
-    // padding-top: 40px;
+ /*   // padding-top: 40px;*/
     float: right;
   }
-  // #main-menu.collapsed {
+/*  // #main-menu.collapsed {
   //   display:none;
-  // }
+  // }*/
   /* Switch to desktop layout
   -----------------------------------------------
      These transform the menu tree from
