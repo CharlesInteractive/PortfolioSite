@@ -30,7 +30,7 @@
   height: 32px;
   position: absolute;
   right: 39px;
-  top: 55px;
+  top: 50px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -46,8 +46,8 @@
   display: block;
   position: absolute;
   height: 3px;
-  width: 83%;
-  margin-left: 5px;
+  width: 60%;
+  margin-left: 13px;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -103,12 +103,12 @@
 #main-menu-button span:nth-child(3),
 .close-icon.open span:nth-child(2),
 .close-icon.open span:nth-child(3) {
-  top: 26px;
+  top: 29px;
 }
 
 #main-menu-button span:nth-child(4),
 .close-icon.open span:nth-child(4) {
-  top: 37px;
+  top: 43px;
 }
 
 #main-menu-button.open span:nth-child(1),
@@ -141,11 +141,6 @@
   left: 50%;
 }
 
-#main-menu > li{
-  text-transform: uppercase;
-  margin-left: 3px;
-}
-
 #main-menu > a:hover:before{
   width: 100%; /* changed value*/
 }
@@ -167,8 +162,7 @@
 
 #main-menu li a:hover{
   color: $brand;
-  bottom:0px;
-  
+  bottom:0px;  
 }
 
 #main-menu li li a:hover{
@@ -177,7 +171,7 @@
 
 #main-menu li.membersButton a{
   color: white;
-  font-weight: $mediumFont;
+  font-weight: 500;
   padding-bottom: 7px;
   padding-left: 11px;
   padding-right: 11px;
@@ -187,11 +181,9 @@
   border-bottom: none;
 }
 #main-menu li a {
-  font-size: 0.688em;
-    line-height: 1.63em;
+/*    line-height: 1.63em;
     text-transform: uppercase;
-    font-weight: 500;
-    color: $slate;
+    font-weight: 500;*/
 }
 #main-menu li li a {
   font-weight: 500;
@@ -234,7 +226,7 @@
 	margin-top: 20px;
 }
 /*// jump to mobi menu after  portrait*/
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 768px) {
   #main-menu-button {
 
     display: block;
@@ -266,12 +258,12 @@
   font-weight: 500;
 }
 .sm-simple a, .sm-simple a:hover, .sm-simple a:focus, .sm-simple a:active {
-  padding: 7px 12px 0 15px;
-  color: inherit;
+/*  padding: 7px 12px 0 15px;*/
+/*  color: inherit;*/
 }
-  .sm-simple a:hover {
+/*  .sm-simple a:hover {
     color: red;
-  }
+  }*/
   .sm-simple li li a, .sm-simple li li a:hover {
     padding: 8px 15px;
     -webkit-transition: .25s ease-in-out;
@@ -344,7 +336,7 @@
   border-left: 40px solid transparent;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 768px) {
   /* Switch to desktop layout
   -----------------------------------------------
      These transform the menu tree from
