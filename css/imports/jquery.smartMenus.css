@@ -19,10 +19,12 @@
 }
 /*// custom styles
 //*/
-
+#main-menu-button span {
+  background: #fff;  
+}
 
 #main-menu-button {
-  background: #00A4DB;
+
   display: none;
   width: 32px;
   height: 32px;
