@@ -54,6 +54,7 @@ $(document).ready(function(){
     //     $(this).toggleClass('collasped');
     // });
 
+
     $('#main-menu-button').click(function() {
         var $this = $(this),
             $menu = $('#main-menu');
@@ -61,13 +62,16 @@ $(document).ready(function(){
             $menu.addClass('collapsed');
             $this.addClass('collapsed');
             $('#main-menu-button').removeClass('open');
+            $menu.removeClass('open');
         } else {
             $menu.removeClass('collapsed');
             $this.removeClass('collapsed');
             $('#main-menu-button').addClass('open');
+            $menu.addClass('open');
         }
         return false;
-    }).click();
+        /* Set the width of the side navigation to 250px */
 
+    }).click();
     // Main Menu
 });

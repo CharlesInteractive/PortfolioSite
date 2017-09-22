@@ -45,6 +45,9 @@ footer a {
 footer i {
   padding: 14px 16px;
 }
+footer ul {
+  list-style: none;
+}
 .title {
   display: inline-block;
   float: left;
@@ -68,7 +71,7 @@ footer a:hover,
 .container {
   height: 100%;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 900px;
   background: #fff;
 }
 /*Page Specific*/
@@ -209,7 +212,7 @@ footer a:hover,
   background-color: #0080ff;
 }
 .square-group {
-  margin-left: 22%;
+  margin-left: 12%;
   position: relative;
 }
 
@@ -329,4 +332,8 @@ footer a:hover,
 }
 #square9 {
   background-image: url(/images/aa.png)
+}
+
+@media screen and (max-width: 768px) {
+  
 }
