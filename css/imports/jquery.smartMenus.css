@@ -94,19 +94,19 @@
 }
 #main-menu-button span:nth-child(1),
 .close-icon.open span:nth-child(1) {
-  top: 11px;
+  top: 14px;
 }
 
 #main-menu-button span:nth-child(2),
 #main-menu-button span:nth-child(3),
 .close-icon.open span:nth-child(2),
 .close-icon.open span:nth-child(3) {
-  top: 38px;
+  top: 26px;
 }
 
 #main-menu-button span:nth-child(4),
 .close-icon.open span:nth-child(4) {
-  top: 43px;
+  top: 37px;
 }
 
 #main-menu-button.open span:nth-child(1),
