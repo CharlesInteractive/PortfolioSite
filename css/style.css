@@ -339,6 +339,12 @@ footer a:hover,
   footer a {
     font-size: 16px;
   }
+  header {
+    padding-top: 15px;
+  }
+  footer {
+    margin-bottom: 0px;
+  }
   footer li {
     display: inline-block;
   }
