@@ -93,6 +93,13 @@ footer a:hover,
   background-size: cover;
   overflow: hidden;
 }
+#contact {
+  height: 100vh;
+  position: relative;
+  background: url(/images/heroFive.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
 /*Landing Full Page Stuff*/
 .fullPageLayout {
     height: 100%;
@@ -354,7 +361,7 @@ footer a:hover,
   div.mobiShow {
     display: block;
   }
-  #about, #portfolio {
+  #about, #portfolio,#contact {
     height: 100%;
   }
   .bottom {
