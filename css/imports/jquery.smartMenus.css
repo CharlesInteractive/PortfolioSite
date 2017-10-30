@@ -94,19 +94,19 @@
 }
 #main-menu-button span:nth-child(1),
 .close-icon.open span:nth-child(1) {
-  top: 14px;
+  top: 11px;
 }
 
 #main-menu-button span:nth-child(2),
 #main-menu-button span:nth-child(3),
 .close-icon.open span:nth-child(2),
 .close-icon.open span:nth-child(3) {
-  top: 26px;
+  top: 24px;
 }
 
 #main-menu-button span:nth-child(4),
 .close-icon.open span:nth-child(4) {
-  top: 37px;
+  top: 36px;
 }
 
 #main-menu-button.open span:nth-child(1),
@@ -233,7 +233,7 @@
     clear: both;
     padding: 0px;
     padding-bottom: 15px;
-    top: -1px;
+    top: 51px;
     height: 405px;
     transition: all .7s;
   }
