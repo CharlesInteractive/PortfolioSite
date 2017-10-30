@@ -354,10 +354,13 @@ footer a:hover,
   div.mobiShow {
     display: block;
   }
+  #about, #portfolio {
+    height: 100%;
+  }
+  .bottom {
+    margin-bottom: 40px;
+  }
 }
 .mobiShow {
   display: none;
-}
-@media screen and (min-width: 768px){
-
 }
