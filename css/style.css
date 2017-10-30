@@ -348,4 +348,16 @@ footer a:hover,
   footer li {
     display: inline-block;
   }
+  .mobiHide {
+    display: none;
+  }
+  div.mobiShow {
+    display: block;
+  }
+}
+.mobiShow {
+  display: none;
+}
+@media screen and (min-width: 768px){
+
 }
