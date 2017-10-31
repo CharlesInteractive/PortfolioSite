@@ -347,7 +347,7 @@ footer a:hover,
 .square:active .square__inner, .square:target .square__inner {
   opacity: 1;
 }
-#square1,#square2,#square3,#square4,#square5,#square6,#square7,#square8,#square9 {
+#square1,#square2,#square3,#square4,#square5,#square6,#square7,#square8,#square9,#square10,#square11,#square12,#square13 {
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -379,6 +379,18 @@ footer a:hover,
 }
 #square9 {
   background-image: url(/images/aa.png)
+}
+#square10 {
+  background-image: url(/images/battle.png)
+}
+#square11 {
+  background-image: url(/images/metroparks.png)
+}
+#square12 {
+  background-image: url(/images/north.png)
+}
+#square13 {
+  background-image: url(/images/nostaglia.png)
 }
 
 @media screen and (max-width: 768px) {
