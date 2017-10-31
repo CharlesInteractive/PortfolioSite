@@ -83,14 +83,15 @@ footer a:hover,
   background: #fff; 
 }
 #about .container,
-#contact .container {
+#contact .container,
+#gallery .container {
   overflow: scroll;
 }
 /*Page Specific*/
 #about {
   height: 100vh;
   position: relative;
-  background: url(/images/heroFive.jpg) no-repeat center center;
+  background: url(/images/heroOne.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
@@ -101,14 +102,14 @@ footer a:hover,
 #portfolio {
   height: 100vh;
   position: relative;
-  background: url(/images/heroOne.jpg) no-repeat center center;
+  background: url(/images/heroTwo.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
 #contact {
   height: 100vh;
   position: relative;
-  background: url(/images/heroFive.jpg) no-repeat center center;
+  background: url(/images/heroThree.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
@@ -126,6 +127,13 @@ footer a:hover,
 .contactInfo a {
   text-decoration: none;
   color: #0080ff;
+}
+#gallery {
+  height: 100vh;
+  position: relative;
+  background: url(/images/heroFour.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
 }
 /*Landing Full Page Stuff*/
 .fullPageLayout {
