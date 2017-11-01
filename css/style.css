@@ -78,7 +78,7 @@ footer a:hover,
   transition: opacity 6s;
 }
 .logo.ready {
-  opacity: .825;
+  opacity: .75;
 }
 /*Pages*/
 .container {
@@ -356,40 +356,30 @@ footer a:hover,
 
 }
 #square2{
-    background-image: url(/images/shopone.png);
-
+  background-image: url(/images/shopone.png);
 }
 #square3 {
   background-image: url(/images/miller.png)
 }
 #square4 {
-  background-image: url(/images/tom.png)
-}
-#square5 {
   background-image: url(/images/helios.png)
 }
-#square6 {
+#square5 {
   background-image: url(/images/marathon.png)
 }
-#square7 {
+#square6 {
   background-image: url(/images/bgsu.png)
 }
-#square8 {
+#square7 {
   background-image: url(/images/region.png)
 }
-#square9 {
-  background-image: url(/images/aa.png)
-}
-#square10 {
-  background-image: url(/images/battle.png)
-}
-#square11 {
+#square8 {
   background-image: url(/images/metroparks.png)
 }
-#square12 {
+#square9 {
   background-image: url(/images/north.png)
 }
-#square13 {
+#square10 {
   background-image: url(/images/nostaglia.png)
 }
 
