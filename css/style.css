@@ -90,7 +90,7 @@ footer a:hover,
 #about .container,
 #contact .container,
 #gallery .container {
-  overflow: scroll;
+  overflow-y: auto;
 }
 /*Page Specific*/
 #about {
@@ -254,7 +254,8 @@ footer a:hover,
   border-left: 1px solid #000;
   border-bottom: 1px solid #000;
 }
-.list-group a:hover {
+.list-group a:hover,
+.list-group a.selected {
   color: #fff;
   background-color: #0080ff;
 }
@@ -329,6 +330,7 @@ footer a:hover,
   cursor: pointer;
   backface-visibility: hidden;
   z-index: 10;
+  pointer-events: none;
 }
 .square .square__inner {
   color: #fff;
@@ -343,6 +345,7 @@ footer a:hover,
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   background: #8f1d21;
   z-index: 11;
+  pointer-events: auto;
 }
 .square:active .square__inner, .square:target .square__inner {
   opacity: 1;
