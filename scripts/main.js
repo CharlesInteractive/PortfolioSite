@@ -74,4 +74,24 @@ $(document).ready(function(){
 
     }).click();
     // Main Menu
+
+    //testing new menu
+    $('#hamberger').click(function() {
+        var $this = $(this),
+            $menu = $('#menu');
+        if (!$this.hasClass('collapsed')) {
+            $menu.addClass('collapsed');
+            $this.addClass('collapsed');
+            $('#hamberger').removeClass('open');
+            $menu.removeClass('open');
+        } else {
+            $menu.removeClass('collapsed');
+            $this.removeClass('collapsed');
+            $('#hamberger').addClass('open');
+            $menu.addClass('open');
+        }
+        return false;
+        /* Set the width of the side navigation to 250px */
+
+    }).click();
 });
