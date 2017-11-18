@@ -2,6 +2,10 @@ body {
   margin:0;
   font-family: 'Oswald', sans-serif;
 }
+ul {
+  margin: 0px;
+  padding: 0px;
+}
 .paddingMed {
   padding: 50px 20px;
 }
@@ -13,40 +17,48 @@ body {
 }
 /*Navigations*/
 header{
-  padding-top: 50px;
-  overflow: hidden;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, .5);
   position: fixed;
-  top: 0;
+  width: 100%;
+  z-index: 99999;
+  padding-top: 0px;
+  border-bottom: 2px solid #fff;
   width: 100%;
   z-index: 99999;
 }
 footer {
-  margin-bottom: 50px;
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: transparent;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
   overflow: hidden;
+  border-top: 2px solid #fff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 1.5em;  
+}
+footer a {
+  margin-left: 20px;
+}
+footer a:first-child {
+  margin-left: 0px;
 }
 header a {
   padding: 14px 16px;
+  text-decoration: none;
+  display: block;
 }
 header a,
 footer a {
-  text-decoration: none;
-  background-color: rgba(0,0,0,0.5);
-  display: block;
   color: #f2f2f2;
   text-align: center;
   font-weight: 800;
   font-size: 21px;
 }
 footer i {
-  padding: 14px 16px;
-}
-footer ul {
-  list-style: none;
+  font-size: 1.5em !important;
 }
 .title {
   display: inline-block;
@@ -262,7 +274,13 @@ footer a:hover,
   margin-left: 12%;
   position: relative;
 }
-
+.list-group-item {
+  transition: all .5s;
+}
+.list-group-item.active {
+  color: #fff;
+  background-color: #0080ff;
+}
 .square:nth-child(1) {
   top: 30px;
   z-index: 9;
@@ -390,14 +408,8 @@ footer a:hover,
   footer a {
     font-size: 16px;
   }
-  header {
-    padding-top: 15px;
-  }
   footer {
     margin-bottom: 0px;
-  }
-  footer li {
-    display: inline-block;
   }
   .mobiHide {
     display: none;
@@ -421,3 +433,94 @@ footer a:hover,
 .mobiShow {
   display: none;
 }
+
+/* new nav test */
+.mainNavIcon {
+  width: 30px;
+  height: 30px;
+  top: 19px;
+  right: 17px;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  z-index: 500;
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  div.mainNavIcon {
+    display: block;
+  }
+  div.mainNavOverlay {
+  display: none;
+  height: 100vh;
+  }
+  #main-menu {
+    width: 100vw;
+    padding-top: 50px;
+  }
+  #main-menu li,  #main-menu a {
+    width: 100%;
+    display: block;
+  }
+}
+#main-menu li,  #main-menu a {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  line-height: normal;
+  direction: ltr;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.mainNavIcon span:nth-child(1) {
+  width: 75%;
+}
+.mainNavIcon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  opacity: 1;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+.mainNavIcon span:nth-child(2), .mainNavIcon span:nth-child(3) {
+  top: 8px;
+}
+.mainNavIcon.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+.mainNavIcon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mainNavIcon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+.mainNavIcon.open ~ .mainNavOverlay {
+  display: block;
+}
+

@@ -18,33 +18,34 @@
     <script src="/scripts/imports/jquery.fullpage.extensions.min.js" type="text/javascript"></script>
   </head>
   <body>
-  	<header>
-      <div class="title">
-        <a href="/">Charles Interactive</a>
-      </div>
-      <div class="navbar">
-        <a id="main-menu-button">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-        <ul id="main-menu" class="sm sm-simple">
-          <li>
-             <a href="/pages/about.html">About</a>
-          </li>
-          <li>
-            <a href="/pages/portfolio.html" style="color:#66b3ff; pointer-events: none;">Portfolio</a>
-          </li>
-          <li>
-            <a href="/pages/gallery.html">Gallery</a>
-          </li>
-          <li>
-            <a href="/pages/contact.html">Contact</a>
-          </li>
-      </ul>
-      </div>
-    </header>
+      <header>
+          <div class="title">
+            <a href="/" style="color:#fff;">Charles Interactive</a>
+          </div>
+          <div class="navbar">
+            <div class="mainNavIcon collapsed">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mainNavOverlay collapsed">
+              <ul id="main-menu" class="sm sm-simple">
+                <li>
+                  <a href="/pages/about.html">About</a>
+                </li>
+                <li>
+                  <a href="/pages/portfolio.html" style="color:#0080ff;pointer-events:none;">Portfolio</a>
+                </li>
+                <li>
+                  <a href="/pages/gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a href="/pages/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
   	<main>
       <div id="portfolio">
         <div class="container">
@@ -57,13 +58,11 @@
             </div>
             <div class="span_9_of_12 col mobiHide">
                 <div class="paddingMed">
-                
                 </div>
             </div>
           </div>
-                  <div class="row mobiHide">
+          <div class="row mobiHide">
             <div class="span_3_of_12 col">
-            
               <div class="list-group">
                 <a href="#square1" class="list-group-item">Ohio Council of Community Schools</a>
                 <a href="#square2" class="list-group-item">ShopOne Centers Reit</a>
@@ -77,10 +76,8 @@
                 <a href="#square10" class="list-group-item">Nostalgia Therapies</a>
                 <p>Click layer to follow link.</p>
               </div>
-            
             </div>
             <div class="span_9_of_12 col">
-
               <div class="square-group">
                 <a href="http://www.ohioschools.org/" target="_blank" id="square1" class="square">
                   <div class="square__inner"></div>
@@ -136,20 +133,20 @@
       </div>
   	</main>
   	<footer>
-      <ul>
-        <li>
-          <a href="https://github.com/CharlesInteractive" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-        </li><!--
-     --><li>
-          <a href="https://www.linkedin.com/in/carrollcharles/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        </li><!--
-     --><li>
-          <a href="https://www.facebook.com/BackdraftsupaC" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-        </li><!--
-    --><li>
-          <a href="mailto:charles@blackswaninteractive.com" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </footer>
+        <a href="https://github.com/CharlesInteractive" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/carrollcharles/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/BackdraftsupaC" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="mailto:charles@blackswaninteractive.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      </footer>
+    <script>
+      $('.list-group a').on('click', function() {
+        $('.list-group-item').each(function(i, obj) {
+            if($(this).hasClass('active')) {
+              $(this).removeClass('active');
+            };
+        });
+        $(this).addClass('active');
+      });
+    </script>
   </body>
 </html>
