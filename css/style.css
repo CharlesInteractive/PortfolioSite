@@ -28,7 +28,7 @@ header{
   width: 100%;
   z-index: 99999;
   padding-top: 0px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #e6e6e6;
   width: 100%;
   z-index: 99999;
   background: #00;
@@ -43,7 +43,7 @@ footer {
   right: 0;
   left: 0;
   overflow: hidden;
-  border-top: 2px solid #fff;
+  border-top: 2px solid #e6e6e6;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
