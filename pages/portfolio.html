@@ -139,13 +139,15 @@
         <a href="mailto:charles@blackswaninteractive.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
       </footer>
     <script>
-      $('.list-group a').on('click', function() {
-        $('.list-group-item').each(function(i, obj) {
-            if($(this).hasClass('active')) {
-              $(this).removeClass('active');
-            };
+      $(document).ready(function() {
+        $('.list-group a').on('click', function() {
+          $('.list-group-item').each(function(i, obj) {
+              if($(this).hasClass('active')) {
+                $(this).removeClass('active');
+              };
+          });
+          $(this).addClass('active');
         });
-        $(this).addClass('active');
       });
     </script>
   </body>

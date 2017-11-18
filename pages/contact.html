@@ -60,7 +60,8 @@
           <div class="span_7_of_12 col">
           <div class="paddingBig">
             <h1>Contact</h1>
-            <p>Social links are shown in the bottom right corner. Any questions or comments are greatly appreciated. Please do not contact me directly with business inquiries. Instead please check out these guys and let them know your interest, and don't forget to mention me.</p>
+            <p>Social links are shown below. Any questions or comments are greatly appreciated.</p>
+            <p>Please do not contact me directly with business inquiries. Instead please check out these guys and let them know your interested.</p>
           </div>
         </div>
         <div class="row">
@@ -88,6 +89,14 @@
             </div>
           </div>
         </div>
+        <div class="row">
+            <div class="col span_12_of_12 bottom">
+              <div class="contactInfo">
+                <p><span></span> Charles Interactive</p>
+                <p>Site made by me, Charles Carroll.</p>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
     </main>
@@ -97,5 +106,10 @@
         <a href="https://www.facebook.com/BackdraftsupaC" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="mailto:charles@blackswaninteractive.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
       </footer>
+      <script>
+        var today = new Date();
+        var year = today.getFullYear();
+        $(".contactInfo span").text(year);
+      </script>
   </body>
 </html>

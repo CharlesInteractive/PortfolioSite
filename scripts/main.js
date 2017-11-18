@@ -12,5 +12,6 @@ $(document).ready(function(){
             $('.mainNavIcon').addClass('open');
         }
         return false;
-      });
+    });
+    $('.container').addClass('ready');
 });

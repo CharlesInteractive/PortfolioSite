@@ -1,3 +1,7 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body {
   margin:0;
   font-family: 'Oswald', sans-serif;
@@ -15,9 +19,11 @@ ul {
 .paddingBig {
   padding: 80px 20px 20px;
 }
+.bottom {
+  margin-bottom: 65px;
+}
 /*Navigations*/
 header{
-  background-color: rgba(0, 0, 0, .5);
   position: fixed;
   width: 100%;
   z-index: 99999;
@@ -25,19 +31,28 @@ header{
   border-bottom: 2px solid #fff;
   width: 100%;
   z-index: 99999;
+  background: #00;
+  background: -webkit-linear-gradient(#000, rgba(0, 0, 0,.5));
+  background: -o-linear-gradient(#000, rgba(0, 0, 0,.5));
+  background: -moz-linear-gradient(#000, rgba(0, 0, 0,.5)w);
+  background: linear-gradient(#000, rgba(0, 0, 0,.5));
 }
 footer {
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .5);
   overflow: hidden;
   border-top: 2px solid #fff;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
-  font-size: 1.5em;  
+  font-size: 1.5em;
+  background: #00;
+  background: -webkit-linear-gradient(rgba(0, 0, 0,.5), #000);
+  background: -o-linear-gradient(rgba(0, 0, 0,.5), #000);
+  background: -moz-linear-gradient(rgba(0, 0, 0,.5), #000)w);
+  background: linear-gradient(rgba(0, 0, 0,.5), #000); 
 }
 footer a {
   margin-left: 20px;
@@ -97,7 +112,15 @@ footer a:hover,
   height: 100%;
   margin: 0 auto;
   max-width: 900px;
-  background: #fff; 
+  background: #fff;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.container::-webkit-scrollbar { 
+  display: none;
+}
+.container.ready {
+  opacity: 1;
 }
 #about .container,
 #contact .container,
