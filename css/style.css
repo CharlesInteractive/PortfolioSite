@@ -517,6 +517,9 @@ footer a:hover,
   .paddingBig {
     padding: 50px 20px 20px;
   }
+  .paddingMed {
+    padding: 10px 20px;
+  }
   #about .span_12_of_12 div.imageBlockContainer img {
     max-width: 100%;
     height: auto;
