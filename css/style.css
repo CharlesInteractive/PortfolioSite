@@ -240,6 +240,39 @@ footer a:hover,
   background-size: cover;
   overflow: hidden;
 }
+#gallery .bxslider div {
+  text-align: center;
+  width: 100%;
+  
+  
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 500;
+  background-color: transparent;
+  -moz-transition: background-color .3s ease-in;
+  -o-transition: background-color .3s ease-in;
+  -webkit-transition: background-color .3s ease-in;
+  transition: background-color 1s ease-in;
+}
+#gallery .bxslider div p {
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  z-index: 999;
+  color: #fff !important;
+  position: absolute;
+  left: 50%;
+  text-align: left;
+  top: 38%;
+  transform: translateX(-50%);
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  font-family: 'Arimo', Open Sans;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 1.5em;
+}
 /*Landing Full Page Stuff*/
 .fullPageLayout {
     height: 100%;
