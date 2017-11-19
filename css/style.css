@@ -110,21 +110,17 @@ footer a:hover,
 }
 /*Pages*/
 .container {
-  height: 100%;
   margin: 0 auto;
   max-width: 900px;
   background: #fff;
   opacity: 0;
   transition: opacity 2s;
 }
-.container::-webkit-scrollbar { 
-  display: none;
-}
+
 .container.ready {
   opacity: 1;
 }
-#about .container,
-#contact .container,
+
 #gallery .container {
   overflow-y: auto;
 }
@@ -134,22 +130,67 @@ footer a:hover,
   position: relative;
   background: url(/images/heroOne.jpg) no-repeat center center;
   background-size: cover;
-  overflow: hidden;
+  position: fixed; 
+  overflow-y: scroll;
+  top: 0; right: 0; bottom: 0; left: 0;
 }
-#about img {
+#about::-webkit-scrollbar { 
+  display: none;
+}
+#about .span_12_of_12 .imageBlockContainer img {
   width: auto;
   max-height: 291px;
-  z-index: 99999;
+  position: absolute;
+  top: 24px;
+  left: 199px;
+}
+#about .span_12_of_12 .imageBlockContainer {
+  position: relative;
+  height: 316px;
+}
+#about .span_12_of_12 .imageBlockContainer div {
+  height: 90%;
+  width: 454px;
+  margin-left: 227px;
+  background: -webkit-linear-gradient(#000, rgba(0, 0, 0,.5),#0000);
+  background: -o-linear-gradient(#000, rgba(0, 0, 0,.5),#000);
+  background: -moz-linear-gradient(#000, rgba(0, 0, 0,.5),#000)w);
+  background: linear-gradient(#000, rgba(0, 0, 0,.5),#000);
+}
+#about .span_6_of_12 .imageBlockContainer.headshot img {
+  width: auto;
+  max-height: 291px;
+  position: absolute;
+  top: 24px;
+  left: 50px;
+}
+#about .span_6_of_12 .imageBlockContainer.headshot {
+  position: relative;
+  height: 316px;
+}
+#about .span_6_of_12 .imageBlockContainer.headshot div {
+  height: 90%;
+  width: 290px;
+  margin-left: 77px;
+  background: -webkit-linear-gradient(#000, rgba(0, 0, 0,.5),#0000);
+  background: -o-linear-gradient(#000, rgba(0, 0, 0,.5),#000);
+  background: -moz-linear-gradient(#000, rgba(0, 0, 0,.5),#000)w);
+  background: linear-gradient(#000, rgba(0, 0, 0,.5),#000);
+}
+#about .span_6_of_12 .imageBlockContainer img {
+  width: auto;
+  max-height: 291px;
   position: absolute;
   top: 24px;
 }
-#about .imageBlockContainer {
+#about .span_6_of_12 .imageBlockContainer {
   position: relative;
+  height: 316px;
 }
-#about .imageBlockContainer div {
-  height: 339px;
-  width: 93%;
-  float: right;
+#about .span_6_of_12 .imageBlockContainer div {
+  height: 90%;
+  width: 383px;
+  margin-left: 29px;
   background: -webkit-linear-gradient(#000, rgba(0, 0, 0,.5),#0000);
   background: -o-linear-gradient(#000, rgba(0, 0, 0,.5),#000);
   background: -moz-linear-gradient(#000, rgba(0, 0, 0,.5),#000)w);
@@ -162,12 +203,20 @@ footer a:hover,
   background-size: cover;
   overflow: hidden;
 }
+#portfolio .container {
+  height: 100%;
+}
 #contact {
   height: 100vh;
-  position: relative;
   background: url(/images/heroThree.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  position: fixed; 
+  overflow-y: scroll;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+#contact::-webkit-scrollbar { 
+  display: none;
 }
 .contactInfo {
   width: 300px;
@@ -468,6 +517,20 @@ footer a:hover,
   .paddingBig {
     padding: 50px 20px 20px;
   }
+  #about .span_12_of_12 div.imageBlockContainer img {
+    max-width: 100%;
+    height: auto;
+  }
+  #about .span_12_of_12 .imageBlockContainer {
+    height: auto;
+  }
+  #about .span_6_of_12 div.imageBlockContainer img {
+    max-width: 100%;
+    height: auto;
+  }
+  #about .span_6_of_12 .imageBlockContainer {
+    height: auto;
+  }
 }
 .mobiShow {
   display: none;
@@ -508,13 +571,29 @@ footer a:hover,
     display: block;
   }
 
-  #about img {
-    width: 100%;
-    height: auto;
-    position: relative;
+  
+    #about .span_12_of_12 .imageBlockContainer img {
+      width: auto;
+      height: 100%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
   }
+  
   #about .imageBlockContainer div {
     display: none;
+  }
+  #about .span_6_of_12 .imageBlockContainer img,
+  #about .span_6_of_12 .imageBlockContainer.headshot img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
   }
 }
 #main-menu li,  #main-menu a {
