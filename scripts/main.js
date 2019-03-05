@@ -8,7 +8,7 @@ function removeFadeOut( el, speed ) {
     }, speed);
 };
 
-//alert if ie11 or earlier
+// Alert if IE11 or earlier.
 var isIE = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
 
 if(isIE){

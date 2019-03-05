@@ -3,23 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="CIFavicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <title>Charles Interactive</title>
+    <meta name="description" content="BGSU 360&deg; Image Gallery - A-Frame">
+
     <link href="css/main.css" rel="stylesheet" />
-    <script src="scripts/imports/aframe-v0.9.0.min.js"></script>
-    <script src="scripts/main.js" type="text/javascript"></script>
+
+    <script src="components/imports/aframe-v0.9.0.min.js"></script>
+    <script src="components/imports/aframe-assets-on-demand-component.min.js"></script>
+    <script src="components/imports/aframe-template-component.min.js"></script>
     <script>
     </script>
   </head>
   <body>
-      <header>
-      </header>
-  	<main>
-      <h1>Lets Start Over</h1>
-  	</main>
-  	<footer>
-  	</footer>
+    <a-scene vr-mode-ui="enabled: false" id="aframe-main">
+      <a-assets></a-assets>
+      <a-sky id="main-background" radius="10" opacity="0" rotation="0 150 0" src="images/equirectangular_images/clay_home.jpg" animation="property:opacity;to:1;dur:2000">
+        <a-animation  attribute="opacity"
+                      dur="2000"
+                      to="1"
+                      repeat="0"
+                      begin="0"></a-animation>
+      </a-sky>
+      
+
+      <!-- Template Container -->
+      <!-- Swapout the template attribute with new "scr: #(asset scene id)" or path "src: scenes/select-res-hall.html" -->
+      <a-entity id="template-container" template="src: scenes/home.html" data-back="" position="0 -1.5 0"></a-entity>
+
+      <!-- Camera Mouse Control -->
+      <a-entity id="camerawrapper" position="0 -1.5 0">
+        <a-camera id="cameracontroller" position="0 0 0" rotation="0 0 0" wasd-controls-enabled="false"></a-camera>
+      </a-entity>
+
+      <a-entity light="color:#BBB;type:ambient"></a-entity>
+      <a-entity light="intensity:0.35;type:ambient" position="0 1 1"></a-entity>
+    </a-scene>
+    <script src="scripts/main.js" type="text/javascript"></script>
   </body>
 </html>
-<script>
-</script>
