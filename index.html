@@ -13,8 +13,6 @@
     <script src="components/imports/aframe-v0.9.0.min.js"></script>
     <script src="components/imports/aframe-assets-on-demand-component.min.js"></script>
     <script src="components/imports/aframe-template-component.min.js"></script>
-    <script>
-    </script>
   </head>
   <body>
     <a-scene vr-mode-ui="enabled: false" id="aframe-main" opacity="0" animation="property:opacity;to:1;dur:2000">
@@ -31,7 +29,7 @@
 
       <!-- Template Container -->
       <!-- Swapout the template attribute with new "scr: #(asset scene id)" or path "src: scenes/select-res-hall.html" -->
-      <a-entity id="template-container" template="src: scenes/home.html" data-back="" position="0 0 0"></a-entity>
+      <a-entity id="template-container" template="src: scenes/home.html" position="0 0 0"></a-entity>
 
       <!-- Camera Mouse Control -->
       <a-entity id="camerawrapper" position="0 0 0">
