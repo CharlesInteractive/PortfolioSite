@@ -10,7 +10,8 @@
     // overflow: scroll;
 }
 
-#scene-container {
+#scene-container,
+#scene-container-subpage {
     position: relative;
     overflow-y: scroll;
     z-index: 1;
@@ -31,8 +32,17 @@
         margin: 300px 20px;
     }
 }
+@include responsive(1650px) {
+    #scene-container,
+    #scene-container-subpage {
+        .scene-inner {
+            margin: 175px 20px;
+        }
+    }
+}
 @include responsive($small-break) {
-    #scene-container {
+    #scene-container,
+    #scene-container-subpage {
         .scene-inner {
             margin: 90px 20px;
         }
@@ -59,7 +69,6 @@ button {
     font-size: 1.5em;
     font-weight: 500;
     background: $white-t;
-    color: $black;
     transition: all 250ms linear;
     cursor: pointer;
     &:hover {
@@ -91,6 +100,38 @@ button {
         border: 3px solid $white;
         border-radius: 50%;
         display: block;
+    }
+}
+
+.social-links {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 100%;
+    width: 100%;
+    .social-link-item {
+        display: flex;
+        text-decoration: none;
+        color: $black;
+        background-color: $white-t;
+        transition: background-color 250ms linear;
+        margin-bottom: 25px;
+        .social-icon {
+            display: flex;
+            flex-basis: 25%;
+            width: 25%;
+            padding: 15px 15px 15px 100px;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .social-name {
+            flex-basis: 75%;
+            width: 75%;
+            padding: 15px 100px 15px 15px;
+        }
+        &:hover {
+            background-color: $white;
+        }
     }
 }
 // Responsive styles if needed
