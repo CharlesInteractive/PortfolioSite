@@ -8,6 +8,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.6;
+  color: $black;
 }
 
 blockquote {
@@ -101,7 +102,24 @@ a {
   }
 }
 
-
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+h1:only-child,
+h2:only-child,
+h3:only-child,
+h4:only-child,
+h5:only-child,
+p:only-child,
+ul:only-child,
+ol:only-child {
+  margin-bottom: 0px;
+}
 
 
 
