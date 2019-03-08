@@ -81,10 +81,14 @@ button {
     }
 }
 
-.home-button {
+.home-button,
+.view-repo-button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.view-repo-button {
+    margin-bottom: 25px;
 }
 
 .scene-content {
