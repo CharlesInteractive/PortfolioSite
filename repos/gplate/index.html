@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gplate</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+<body>
+    <header class="mg-b-xl">
+        <div class="fixed w-full flex justify-space-between bg-c-black p-t-sm p-b-sm p-l-md p-r-md main-nav-helper">
+            <div class="wrapper flex justify-space-between bg-c-black pd-t-sm pd-b-sm">
+                <div class="logo">
+                    <a href="/"><i class="fab fa-grunt text-white h3"></i></a>
+                </div>
+                <nav class="mobi-hide">
+                    <ul class="list-unstyled text-white flex justify-space-between">
+                        <li class="mg-l-md">
+                            <a href="/" class="text-white h3">Nav Item 1</a>
+                        </li>
+                        <li class="mg-l-md">
+                            <a href="/" class="text-white h3">Nav Item 2</a>
+                        </li>
+                        <li class="mg-l-md">
+                            <a href="/" class="text-white h3">Nav Item 2</a>
+                        </li>
+                        <li class="mg-l-md">
+                            <a href="/" class="text-white h3">Nav Item 4</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tab-hide desktop-hide">
+                    <div id="mobinav-open">
+                        <i class="fas fa-bars text-white h3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-c-black bgi-no-repeat bgi-cover bgi-center"
+            style="background-image: url(/assets/images/office/pexels-office-10-large.jpg);">
+            <div class="pd-t-xl h-screen flex justify-center align-end">
+                <h1 class="text-center text-white w-full pd-b-lg pd-t-lg" 
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0),
+                                                    rgba(0, 0, 0, 0.4),
+                                                    rgba(0, 0, 0, 0.7),
+                                                    rgba(0, 0, 0, 0.9));">Welcome to Gplate! <i class="fab fa-grunt"></i></h1>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="wrapper mg-b-lg">
+            <div class="flex-mg-row responsive-flex">
+                <div class="flex-mg-dub-col">
+                    <h2>Type Styles</h2>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <p>Paragraph text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Nam totam iste</strong>, officiis tempora, molestias dolorum exercitationem rem soluta quo laboriosam numquam. Dolorem facilis modi consectetur asperiores! <em>Voluptatibus praesentium repellendus id.</em></p>
+                    <p class="gray-light">Subtle hint</p>
+                    <p><a href="">Link text</a></p>
+                    <blockquote>
+                        <p>Blockquote, something to inspire and worth remembering.</p>
+                        <figcaption>&mdash; Author's Name, <cite>Cited Material's Title</cite></figcaption>
+                    </blockquote>
+                    <pre>&lt;script&gt;Some code block&lt;/script&gt;</pre>
+                    <p>Some <code>&lt;inline code&gt;</code> instead.</p>
+                </div>
+                <div class="flex-mg-col">
+                    <h2 class="text-center">Buttons</h2>
+                    <button class="btn mg-center">Primary button</button>
+                    <a href="/" class="btn mg-center">Link button</a>
+                    <button class="btn green-button mg-center">Green Button</button>
+                    <button class="btn teal-button mg-center">teal Button</button>
+                    <button class="btn red-button mg-center">Red Button</button>
+                    <button class="btn black-button mg-center">Black Button</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper mg-b-lg">
+            <div class="flex-mg-row responsive-flex">
+                <div class="flex-mg-col mobi-hide">
+                    <h3>Hide only on mobile.</h3>
+                </div>
+                <div class="flex-mg-col tab-hide">
+                    <h3>Hide only on tablets.</h3>
+                </div>
+                <div class="flex-mg-col desktop-hide">
+                    <h3>Hide only on desktop.</h3>    
+                </div>
+            </div>
+        </div>
+        <div class="bg-c-gray-light pd-t-md pd-b-lg mg-b-lg">
+            <div class="wrapper">
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <h2>Notifications/Alerts</h2>
+                        <div class="alert alert-danger text-center mg-b-sm">
+                            <strong><p>There was a problem.</p></strong>
+                        </div>
+                        <div class="alert alert-success text-center mg-b-sm">
+                            <strong><p>Successs! Something succeeded.</p></strong>
+                        </div>
+                        <div class="alert alert-info text-center">
+                            <strong><p>Some useful information.</p></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper mg-b-lg">
+            <div class="flex-mg-row responsive-flex">
+                <div class="flex-mg-col">
+                    <h2>Lists</h2>
+                    <ul>
+                        <li><strong>Unordered List</strong> Option 1</li>
+                        <li>Unordered List Option 2
+                            <ul>
+                                <li>Unordered Sub-List Option 1</li>
+                                <li>Unordered Sub-List Option 2
+                                    <ul>
+                                        <li>Unordered Sub-List Option 1</li>
+                                        <li>Unordered Sub-List Option 2</li>
+                                        <li>Unordered Sub-List Option 3</li>
+                                    </ul>
+                                </li>
+                                <li>Unordered Sub-List Option 3</li>
+                            </ul>
+                        </li>
+                        <li>Unordered List Option 3</li>
+                    </ul>
+                    <ol>
+                        <li><strong>Ordered List</strong> Option 1</li>
+                        <li>Ordered List Option 2
+                            <ol>
+                                <li>Ordered Sub-List Option 1</li>
+                                <li>Ordered Sub-List Option 2
+                                    <ol>
+                                        <li>Ordered Sub-List Option 1</li>
+                                        <li>Ordered Sub-List Option 2</li>
+                                        <li>Ordered Sub-List Option 3</li>
+                                    </ol>
+                                </li>
+                                <li>Ordered Sub-List Option 3</li>
+                            </ol>
+                        </li>
+                        <li>Ordered List Option 3</li>
+                    </ol>
+                    <ul class="list-unstyled">
+                        <li><strong>Unstyled List</strong> Option 1</li>
+                        <li>Unstyled List Option 2</li>
+                        <li>Unstyled List Option 3</li>
+                    </ul>
+                </div>
+                <div class="flex-mg-dub-col">
+                    <h2>Tables</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Column 1</th>
+                                <th scope="col">Column 2</th>
+                                <th scope="col" class="text-right">Column 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td class="text-right">Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td class="text-right">Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td class="text-right">Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td class="text-right">Data 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper mg-b-lg">
+            <div class="flex-row mg-b-sm">
+                <div class="flex-col">
+                    <h2>Handlbars</h2>
+                </div>
+            </div>
+            <div class="flex-mg-row responsive-flex">
+                <div class="flex-mg-col">
+                    <h3>First Template</h3>
+                    <div id="render-first"></div>
+                </div>
+                <div class="flex-mg-col">
+                    <h3>Second Template</h3>
+                    <div id="render-second"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-c-gray-light pd-t-md pd-b-lg mg-b-lg">
+            <div class="wrapper">
+                <div class="flex-mg-row">
+                    <div class="flex-mg-col">
+                        <h2 class="text-center">jQuery Popup Overlay</h2>
+                        <button id="pops-open" class="btn mg-center">Open Pop-Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pops" class="bg-c-white rounded-sm pd-md">
+            <h3 class="text-center">Pop-Up!</h3>
+            <p class="text-center mg-b-md">You opened the pop-up!</p>
+            <button id="pops-close" class="btn mg-center">Close</button>
+        </div>
+        <div class="wrapper">
+            <div class="flex-row mg-b-sm">
+                <div class="flex-col">
+                    <h2 class="text-center">Slick Slider</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-sm pd-l-md pd-r-md mg-b-lg">
+            <div id="slider">
+                <div class="bg-c-gray-light pd-lg">
+                    <p>Your content 1.</p>
+                </div>
+                <div class="bg-c-blue pd-lg">
+                    <p><strong>Your content 2.</strong></p>
+                </div>
+                <div class="bg-c-teal pd-lg">
+                    <p><em>Your content 3.</em></p>
+                </div>
+                <div>
+                    <img src="/assets/images/office/pexels-office-5.jpg" alt="office pic" srcset="">
+                </div>
+                <div class="bg-c-green pd-lg">
+                    <p>Your content 5.</p>
+                </div>
+                <div class="bg-c-red pd-lg">
+                    <p><strong>Your content 6.</strong></p>
+                </div>
+                <div class="bg-c-black pd-lg">
+                    <p class="text-white"><em>Your content 7.</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-c-gray-light pd-t-md pd-b-lg mg-b-lg mg-t-md">
+            <div class="wrapper mg-b-md">
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <h2 class="text-center">Font Awesome</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div id="render-icons" class="flex-row flex-cols-6"></div>
+            </div>
+        </div>
+        <div class="wrapper-md mg-b-lg">
+            <div class="flex-row mg-b-md">
+                <div class="flex-col">
+                    <h2>Images</h2>
+                </div>
+            </div>
+            <div class="flex-mg-row mg-b-md">
+                <div class="flex-mg-col">
+                    <img src="/assets/images/office/pexels-office-4.jpg" alt="office pic" srcset="" class="mg-b-md">
+                    <img src="/assets/images/office/pexels-office-3.jpg" alt="office pic" srcset="" class="mg-b-md">
+                    <img src="/assets/images/office/pexels-office-7.jpg" alt="office pic" srcset="">
+                </div>
+                <div class="flex-mg-dub-col">
+                    <img src="/assets/images/office/pexels-office-5.jpg" alt="office pic" srcset="" class="mg-b-md">
+                    <img src="/assets/images/office/pexels-office-2.jpg" alt="office pic" srcset="" class="mg-b-md">
+                    <img src="/assets/images/office/pexels-office-1.jpg" alt="office pic" srcset="">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-col">
+                    <img src="/assets/images/office/pexels-office-6.jpg" alt="office pic" srcset="">
+                </div>
+            </div>
+        </div>
+        <div class="bg-c-gray-light pd-t-md pd-b-lg mg-t-md mg-b-lg">
+            <div class="wrapper-sm">
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <h2>Video</h2>
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/07d2dXHYb94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-sm mg-b-xl">
+            <h2>Forms</h2>
+            <form method="get" name="gplate-form" id="gplate-form" action="/">
+                <div class="form-group">
+                    <label for="name">Text label</label>
+                    <input id="name" name="name" type="text">
+                    <p class="subtle"><em>Hint/help</em></p>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div class="form-group">
+                    <label for="birth-date">Birth Date</label>
+                    <input id="birth-date" name="birth-date" type="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input id="time" name="time" type="time">
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Dropdown</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="default" selected disabled>Choose an option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Maybe">Maybe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password <em>(Required)</em></label>
+                    <input id="password" name="password" type="password" required>
+                </div>
+                <div class="form-group has-error">
+                    <label for="required">Required Field <em>(Required)</em></label>
+                    <input id="required" name="required" type="text" required>
+                    <p class="error-description">This field is required</p>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Textarea</label>
+                    <textarea id="textarea" name="textarea"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="flex-row">
+                        <div class="flex-col">
+                            <label for="">Checkboxes</label>
+                            <label class="checkbox-container mg-t-sm" for="checkbox1">Checkbox Option 1
+                                <input type="checkbox" id="checkbox1" name="checkbox1" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container" for="checkbox2">Checkbox Option 2
+                                <input type="checkbox" id="checkbox2" name="checkbox2" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container" for="checkbox3">Checkbox Option 3
+                                <input type="checkbox" id="checkbox3" name="checkbox3">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="flex-col">
+                            <label for="">Radio Button</label>
+                            <label class="checkbox-container mg-t-sm" for="radiooption1">Radio Option 1
+                                <input type="radio" id="radiooption1" name="radiooption">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container" for="radiooption2">Radio Option 2
+                                <input type="radio" id="radiooption2" name="radiooption">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container" for="radiooption3">Radio Option 3
+                                <input type="radio" id="radiooption3" name="radiooption" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn mg-center" id="submit" name="submit" value="Submit Form">
+            </form>
+        </div>
+        <div id="mobinav" class="pd-md">
+            <div class="flex flex-col">
+                <a href="/" class="h3 text-white mg-b-sm">Nav Item 1</a>
+                <a href="/" class="h3 text-white mg-b-sm">Nav Item 2</a>
+                <a href="/" class="h3 text-white mg-b-sm">Nav Item 3</a>
+                <a href="/" class="h3 text-white mg-b-sm">Nav Item 4</a>
+            </div>
+            <div id="mobinav-close">
+                <i class="fas fa-times text-white h3"></i>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bg-c-black bgi-no-repeat bgi-cover bgi-center h-screen"
+            style="background-image: url(/assets/images/office/pexels-office-8-large.jpg);"></div>
+        <div class="bg-c-black">
+            <div class="wrapper pd-b-xl pd-t-xl">
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <h2 class="text-center text-white">Developed by Charles Carroll</h2>
+                        <p class="text-center"><a href="/" class="text-white">View on Github <i class="fab fa-github"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/min/imports.min.js" type="text/javascript"></script>
+    <script src="./js/templates/all.js" type="text/javascript"></script>
+    <script src="./js/min/main.min.js" type="text/javascript"></script>
+</body>
+</html>
+
+

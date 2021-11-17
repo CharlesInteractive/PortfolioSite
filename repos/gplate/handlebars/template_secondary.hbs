@@ -1,0 +1,9 @@
+
+   <ul class="list-unstyled">
+        {{#each persons}}
+            <li class="rounded-sm mg-b-sm bg-c-gray-light pd-sm">
+                <h4>Index: {{@index}}</h4>
+                <p>Hi, my name is <strong>{{properties.name}}</strong> I am a {{properties.occupation}}. I know {{#each properties.skills}}<span>{{#if @last}}and {{/if}}{{this}}{{#unless @last}}, {{/unless}}</span>{{/each}}.</p>
+            </li>
+        {{/each}}
+   </ul>

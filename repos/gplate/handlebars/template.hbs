@@ -1,0 +1,18 @@
+
+   <ul class="list-unstyled">
+        {{#each persons}}
+            <li class="rounded-sm mg-b-sm bg-c-gray-light pd-sm">
+                <h4>Index: {{@index}}</h4>
+                <p>
+                    <strong>Name: </strong>{{properties.name}}<br>
+                    <strong>Occupation: </strong>{{properties.occupation}}.<br>
+                    <strong>Skills:</strong>
+                </p>
+                <ul>
+                    {{#each properties.skills}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </li>
+        {{/each}}
+   </ul>

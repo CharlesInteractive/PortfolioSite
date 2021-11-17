@@ -1,0 +1,113 @@
+{
+    "icons": [
+        {
+            "name": "android"
+        },
+        {
+            "name": "amazon"
+        },
+        {
+            "name": "apple"
+        },
+        {
+            "name": "bitcoin"
+        },
+        {
+            "name": "chrome"
+        },
+        {
+            "name": "cloudflare"
+        },
+        {
+            "name": "css3"
+        },
+        {
+            "name": "discord"
+        },
+        {
+            "name": "docker"
+        },
+        {
+            "name": "edge"
+        },
+        {
+            "name": "facebook"
+        },
+        {
+            "name": "firefox"
+        },
+        {
+            "name": "github"
+        },
+        {
+            "name": "google"
+        },
+        {
+            "name": "grunt"
+        },
+        {
+            "name": "html5"
+        },
+        {
+            "name": "instagram"
+        },
+        {
+            "name": "js"
+        },
+        {
+            "name": "linkedin"
+        },
+        {
+            "name": "linux"
+        },
+        {
+            "name": "node"
+        },
+        {
+            "name": "npm"
+        },
+        {
+            "name": "php"
+        },
+        {
+            "name": "python"
+        },
+        {
+            "name": "raspberry-pi"
+        },
+        {
+            "name": "react"
+        },
+        {
+            "name": "reddit"
+        },
+        {
+            "name": "rust"
+        },
+        {
+            "name": "sass"
+        },
+        {
+            "name": "snapchat"
+        },
+        {
+            "name": "tiktok"
+        },
+        {
+            "name": "twitch"
+        },
+        {
+            "name": "twitter"
+        },
+        {
+            "name": "whatsapp"
+        },
+        {
+            "name": "windows"
+        },
+        {
+            "name": "youtube"
+        }
+        
+    ]
+  }

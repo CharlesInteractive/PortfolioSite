@@ -1,0 +1,36 @@
+{
+    "persons": [
+        {
+            "properties": {
+                "name": "Charles C.",
+                "occupation": "Front-End Developer",
+                "skills": [
+                    "HTML",
+                    "CSS",
+                    "Javascript"
+                ]
+            }
+        },
+        {
+            "properties": {
+                "name": "Charlie D.",
+                "occupation": "Back-End Developer",
+                "skills": [
+                    "PHP",
+                    "Python",
+                    "MySQL"
+                ]
+            }
+        },
+        {
+            "properties": {
+                "name": "Carl M.",
+                "occupation": "Administrator",
+                "skills": [
+                    "Office",
+                    "Windows Server"
+                ]
+            }
+        }
+    ]
+  }
