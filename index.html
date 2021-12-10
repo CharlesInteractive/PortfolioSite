@@ -1,49 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <title>Charles Interactive - Charles Carroll's Github Portfolio</title>
-    <meta name="description" content="Charles Carroll's Github Portfolio">
-
-    <link href="css/main.css" rel="stylesheet" />
-
-    <script src="components/imports/aframe-v0.9.0.min.js"></script>
-    <script src="components/imports/aframe-template-component.min.js"></script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
-    <a-scene vr-mode-ui="enabled: false" id="aframe-main">
-      <a-assets></a-assets>
-      <a-sky id="main-background" radius="10" opacity="1" rotation="0 150 0" src="images/equirectangular_images/clay_home.jpg"></a-sky>
-      
-      <a-sphere color="#b6c7d5" radius=".7" position="-0.9 -2.6 -8.7" material="" geometry=""></a-sphere>
-      <a-sphere color="#b6c7d5" radius="1" position="-7 0 -3.3" material="" geometry=""></a-sphere>
-      <a-sphere color="#b6c7d5" radius="1" position="0 2 6.8" material="" geometry=""></a-sphere>
-      <a-sphere color="#b6c7d5" radius=".5" position="-5.1 -3.2 6" material="" geometry=""></a-sphere>
-      <a-sphere color="#b6c7d5" radius=".7" position="-5.7 -1.5 4.4" material="" geometry=""></a-sphere>
-      <a-sphere color="#b6c7d5" radius=".6" position="9.3 0.2 -0.5" material="" geometry=""></a-sphere>
-      <a-sphere color="#b6c7d5" radius=".7" position="5.2 -3.5 -7" material="" geometry=""></a-sphere>
-
-      <!-- Template Container -->
-      <!-- Swapout the template attribute with new "scr: #(asset scene id)" or path "src: scenes/select-res-hall.html" -->
-      <a-entity id="template-container" template="src: scenes/home.html" position="0 0 0"></a-entity>
-
-      <!-- Camera Mouse Control -->
-      <a-entity id="camerawrapper" position="0 0 0">
-        <a-camera id="cameracontroller" position="0 0 0" rotation="0 0 0" wasd-controls-enabled="false"></a-camera>
-      </a-entity>
-
-    </a-scene>
-    <script src="scripts/main.js" type="text/javascript"></script>
-  </body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Interactive - Black Ice Interactive</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: system;
+            font-style: normal;
+            font-weight: 300;
+            src: local(".SFNSText-Light"),
+                local(".HelveticaNeueDeskInterface-Light"),
+                local(".LucidaGrandeUI"),
+                local("Ubuntu Light"),
+                local("Segoe UI Light"),
+                local("Roboto-Light"),
+                local("DroidSans"),
+                local("Tahoma");
+        }
+        body {
+            font-family: "system";
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>Black Ice Interactive</h1>
+        <p>Nothing here, redirecting in <strong><span id="time">00:05</span></strong>.</p>
+    </body>
+    <script>
+        function startTimer(duration, display) {
+            var start = Date.now(),
+                diff,
+                seconds;
+            function timer() {
+                diff = duration - (((Date.now() - start) / 1000) | 0);
+                seconds = (diff % 60) | 0;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = "00:" + seconds;
+                if (diff <= 0) {
+                    start = Date.now() + 1000;
+                }
+                if(diff === 0) {
+                    window.location.href = "https://www.blackiceinteractive.com/";
+                }
+            };
+            timer();
+            setInterval(timer, 1000);
+        }
+        window.onload = function () {
+            var five = 5,
+                display = document.querySelector('#time');
+            startTimer(five, display);
+        };
+    </script>
+</body>
 </html>
